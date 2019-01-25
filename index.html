@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoo Front End</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "zoo.js"></script>
+    <link rel="stylesheet" type="css" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<h1>Animals in a Zoo</h1>
+<div id = "animalDiv">Animal Name:</div>
+<input id = "nameField">
+<select id = "selectAnimal">
+    <option value = "selectAnimal">Select Animal</option>
+    <option value = "1">Tiger</option>
+    <option value = "2">Bear</option>
+    <option value = "3">Unicorn</option>
+    <option value = "4">Giraffe</option>
+    <option value = "5">Bee</option>
+</select>
+<button id = "create">Create Animal</button>
+
+<br>
+<br>
+<h4>Feed the Animals</h4>
+<select id = "feed">
+    <option>Meat</option>
+    <option>Fish</option>
+    <option>Marshmallows</option>
+    <option>Leaves</option>
+    <option>Pollen</option>
+</select>
+<button id = "feedAnimal" onclick = "feedAnimals()">Feed</button>
+
+<br>
+<br>
+
+<h4>Delete Animal</h4>
+<div>Name:</div>
+<input type = "text" id = "delete">
+<button id = "deleteButton" onclick = "deleteAnimal()">Delete</button>
+
+<br>
+<br>
+<h4>Change an Animal's Name</h4>
+<div>Original Name:</div>
+<input type = "text" id = "first">
+<div>New Name:</div>
+<input type = "text" id = "second">
+<button id = "changeName" onclick = "changeName()">Change Name</button>
+
+<br>
+
+<div id = "allAnimals"></div>
+<br>
+<h4 id = "animalNames">Your Animals:</h4>
+<br>
+<div id = "printer"></div>
+
+<br>
+
+<h4>What's happening with your dinosaurs?</h4>
+<div id = "actions"></div>
+
+</body>
+</html>
